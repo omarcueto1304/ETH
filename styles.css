@@ -1,0 +1,235 @@
+body {
+    padding-top: 16.66vh; /* Espacio para la altura de la barra de navegación fija */
+    height: 100%; /* Asegura que el cuerpo y el HTML ocupen toda la pantalla */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white; /* Fondo blanco */
+    height: 16.66vh; /* 1/6 de la altura de la pantalla */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido dentro de la barra de navegación */
+    padding-left: 20px; /* Asegura que haya espacio a la izquierda si se necesita más margen */
+    z-index: 1030; /* Asegura que la barra de navegación esté por encima del contenido */
+}
+
+.navbar-brand img {
+    margin-left: 90px; /* Agrega un margen izquierdo para separar el logo del borde izquierdo */
+    height: 90%; /* Ajusta la altura del logo según sea necesario */
+    max-height: 90%; /* Asegura que el logo no exceda la altura del contenedor */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Alinea los elementos del menú a la derecha */
+    margin-right: auto; /* Centra horizontalmente los elementos del menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 30px; /* Espaciado entre los elementos del menú */
+}
+
+.navbar-nav .nav-link {
+    color: #0068a2; /* Color de las letras */
+    font-weight: bold; /* Negrita */
+    font-size: 60px; /* Tamaño de letra más grande */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+}
+
+.quienes-somos-section {
+    height: 90vh; /* Ocupa el 90% de la altura de la pantalla */
+    padding: 20px; /* Espaciado alrededor de la sección */
+    background-color: #f8f9fa; /* Color de fondo claro para resaltar la sección (opcional) */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    flex-direction: column; /* Asegura que el contenido se organice en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.quienes-somos-section h2 {
+   font-size: 7.5vh; /* Tamaño de la fuente del título */
+   color: #333; /* Color del título */
+   height: auto; /* El h2 ocupa el 20% de la altura de la pantalla */
+   font-weight: bold; /* Negrita */
+   margin-bottom: 20px; /* Espaciado debajo del h2 */
+   width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+   max-width: 90%; /* Asegura que no exceda el 90% del ancho */
+   margin: 0 auto; /* Centra el texto horizontalmente */
+}
+
+.quienes-somos-section h3 {
+    font-size: 3.5vh; /* Tamaño de la fuente del texto reducido */
+    color: #6c757d; /* Color gris del texto */
+    font-weight: 300; /* Fuente más delgada */
+    line-height: 1.2; /* Espaciado entre líneas ajustado */
+    letter-spacing: 0.5px; /* Espaciado entre letras ajustado */
+    width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 90%; /* Asegura que no exceda el 90% del ancho */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente dentro del h3 */
+    justify-content: center; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+}
+
+.servicios-section {
+    height: 90vh; /* Ocupa el 90% de la altura de la pantalla */
+    padding: 20px; /* Espaciado alrededor de la sección */
+    background-color: #0068a2; /* Fondo azul específico */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se organice en columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.servicios-section h2 {
+    font-size: 7vh; /* Tamaño de la fuente del título */
+    color: white; /* Color del título */
+    height: 20%; /* El título ocupa el 20% de la altura de la pantalla */
+    margin-bottom: 20px; /* Espaciado debajo del h2 */
+    width: 100%; /* Asegura que el título ocupe todo el ancho */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.servicios-section .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una sola línea */
+    justify-content: space-between; /* Espacia uniformemente las cards */
+    align-items: stretch; /* Hace que todas las cards tengan la misma altura */
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    height: 70%; /* Ocupa el 70% del alto de la pantalla */
+}
+
+.servicios-section .card {
+    background-color: #f8f9fa; /* Fondo claro para las cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Cada card ocupa el 30% del ancho del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Espaciado entre las filas */
+    transition: transform 0.3s ease; /* Transición suave para hover */
+}
+
+.servicios-section .card:hover {
+    transform: scale(1.05); /* Escala la card en hover para darle un efecto */
+}
+
+.servicios-section .card-img-top {
+    width: 100%; /* Ancho de la imagen */
+    height: auto%; /* Alto de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área designada */
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+.servicios-section .card-title {
+    font-size: 3vh;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicios-section .card-text {
+    font-size: 2.5vh;
+    color: #555;
+    text-align: center;
+}
+
+
+.blog-section {
+    padding: 100px 20px; /* Espaciado alrededor de la sección */
+    background-color: white; /* Fondo blanco */
+    text-align: center; /* Centra el texto */
+}
+
+.blog-section h1 {
+    font-size: 8vh; /* Tamaño grande de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 50px; /* Espaciado debajo del h1 */
+}
+
+.blog-article {
+    margin-bottom: 50px; /* Espaciado entre artículos */
+    background-color: #f2f2f2; /* Fondo gris claro para cada artículo */
+    padding: 20px; /* Espaciado interno en cada artículo */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.blog-article h2 {
+    font-size: 5vh; /* Tamaño de la fuente del título de los artículos */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Espaciado debajo del h2 */
+}
+
+.blog-article .blog-image {
+    width: 50%; /* Imagen ocupa el 50% del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin: 20px auto; /* Centra la imagen horizontalmente y añade espaciado vertical */
+    display: block; /* Asegura que la imagen se comporte como un bloque para el centrado */
+}
+
+.blog-article p {
+    width: 90%; /* Texto ocupa el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    font-size: 2.5vh; /* Tamaño de la fuente del texto */
+    color: #555; /* Color gris para el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+
+.footer-section {
+    height: 40vh; /* Ocupa el 40% de la altura de la pantalla */
+    background-color: white; /* Fondo blanco */
+    color: #6c757d; /* Color gris para el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 5vh; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    color: #333; /* Color del título más oscuro para destacar */
+}
+
+.footer-section .contact-info p {
+    font-size: 2.5vh; /* Tamaño del texto de contacto */
+    margin: 5px 0; /* Espaciado entre líneas de contacto */
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 30px; /* Reduce el tamaño de letra en pantallas pequeñas */
+    }
+    
+    .navbar-brand img {
+        margin-left: 20px; /* Reduce el margen en pantallas pequeñas */
+        height: 60%; /* Ajusta la altura del logo para pantallas pequeñas */
+    }
+    
+    .navbar {
+        height: auto; /* Permite que la barra se ajuste automáticamente */
+        padding-left: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+
+
+
