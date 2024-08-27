@@ -15,9 +15,9 @@ body {
 }
 
 .navbar-brand img {
-    margin-left: 90px; /* Agrega un margen izquierdo para separar el logo del borde izquierdo */
-    height: 90%; /* Ajusta la altura del logo según sea necesario */
-    max-height: 90%; /* Asegura que el logo no exceda la altura del contenedor */
+    margin-left: 1vw; /* Agrega un margen izquierdo para separar el logo del borde izquierdo */
+    height: 50%; /* Ajusta la altura del logo según sea necesario */
+    max-height: 50%; /* Asegura que el logo no exceda la altura del contenedor */
 }
 
 .navbar-nav {
@@ -35,7 +35,7 @@ body {
 .navbar-nav .nav-link {
     color: #0068a2; /* Color de las letras */
     font-weight: bold; /* Negrita */
-    font-size: 60px; /* Tamaño de letra más grande */
+    font-size: 1.5rem; /* Tamaño de letra más grande */
     text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
 
@@ -194,6 +194,7 @@ body {
     background-color: white; /* Fondo blanco */
     color: #6c757d; /* Color gris para el texto */
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
