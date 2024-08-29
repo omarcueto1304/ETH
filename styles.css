@@ -145,7 +145,6 @@ body {
     text-align: center;
 }
 
-
 .blog-section {
     padding: 100px 20px; /* Espaciado alrededor de la sección */
     background-color: white; /* Fondo blanco */
@@ -160,10 +159,21 @@ body {
 }
 
 .blog-article {
-    margin-bottom: 50px; /* Espaciado entre artículos */
-    background-color: #f2f2f2; /* Fondo gris claro para cada artículo */
+    margin: 1rem auto; /* Margen de 1rem a los lados, centrado horizontalmente */
+    background-color: #f2f2f2; /* Fondo gris claro para todo el artículo */
     padding: 20px; /* Espaciado interno en cada artículo */
     border-radius: 10px; /* Bordes redondeados opcionales */
+    width: calc(100% - 2rem); /* Ancho ajustado para considerar los márgenes */
+    scroll-margin-top: 16.66vh; /* Ajusta el margen superior de desplazamiento para considerar la altura del navbar */
+}
+
+.blog-article p {
+    width: 90%; /* Texto ocupa el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    font-size: 3vh; /* Tamaño de la fuente ligeramente más grande */
+    color: #555; /* Color gris para el texto */
+    line-height: 1.8; /* Espaciado entre líneas ligeramente mayor */
+    text-align: justify; /* Justifica el texto */
 }
 
 .blog-article h2 {
@@ -178,16 +188,6 @@ body {
     margin: 20px auto; /* Centra la imagen horizontalmente y añade espaciado vertical */
     display: block; /* Asegura que la imagen se comporte como un bloque para el centrado */
 }
-
-.blog-article p {
-    width: 90%; /* Texto ocupa el 90% del ancho de la pantalla */
-    margin: 0 auto; /* Centra el texto horizontalmente */
-    font-size: 2.5vh; /* Tamaño de la fuente del texto */
-    color: #555; /* Color gris para el texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    text-align: left; /* Alineación del texto a la izquierda */
-}
-
 
 .footer-section {
     height: 40vh; /* Ocupa el 40% de la altura de la pantalla */
@@ -213,6 +213,29 @@ body {
     margin: 5px 0; /* Espaciado entre líneas de contacto */
 }
 
+/* Estilo para los hipervínculos en el índice */
+.list-group-item a {
+    color: #003366; /* Azul oscuro */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Suaviza la transición al hacer hover */
+}
+
+.list-group-item a:hover {
+    transform: scale(1.1); /* Incrementa el tamaño en un factor de 1.1 al hacer hover */
+}
+
+/* Estilo para los hipervínculos al final de cada artículo */
+.blog-article a {
+    color: #003366; /* Azul oscuro */
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Suaviza la transición al hacer hover */
+}
+
+.blog-article a:hover {
+    transform: scale(1.1); /* Incrementa el tamaño en un factor de 1.1 al hacer hover */
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -230,7 +253,3 @@ body {
         padding-left: 10px; /* Reduce el padding en pantallas pequeñas */
     }
 }
-
-
-
-

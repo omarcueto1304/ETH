@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para los hipervínculos en el índice */
+        .list-group-item a {
+            color: #003366; /* Azul oscuro */
+            font-weight: bold; /* Negrita */
+            text-decoration: none; /* Sin subrayado */
+            transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Suaviza la transición al hacer hover */
+        }
+
+        .list-group-item a:hover {
+            transform: scale(1.1); /* Incrementa el tamaño en un factor de 1.1 al hacer hover */
+        }
+
+        /* Estilo para los hipervínculos al final de cada artículo */
+        .blog-article a {
+            color: #003366; /* Azul oscuro */
+            font-weight: bold; /* Negrita */
+            text-decoration: none; /* Sin subrayado */
+            transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Suaviza la transición al hacer hover */
+        }
+
+        .blog-article a:hover {
+            transform: scale(1.1); /* Incrementa el tamaño en un factor de 1.1 al hacer hover */
+        }
+
+        /* Ajuste para que el título del artículo quede en la parte superior al hacer clic */
+        .blog-article {
+            scroll-margin-top: 16.66vh; /* Ajusta el margen superior de desplazamiento para considerar la altura del navbar */
+        }
+    </style>
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
@@ -15,7 +47,8 @@
             <a class="navbar-brand" href="#">
                 <img src="imagen/eth_consultores_logo.jpeg" alt="Logo" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,122 +60,159 @@
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                    </li>
+                        <a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+                        <a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Sección Blog -->
-    <section class="blog-section">
-        <h1>Blog</h1>
-        <article class="blog-article">
-            <h2>Título del Artículo 1</h2>
-            <img src="imagen/reunion.jpg" alt="Imagen Artículo 1" class="blog-image">
-            <p>El desarrollo de habilidades de liderazgo es esencial en cualquier ámbito de la vida. Desde el ámbito laboral hasta el personal, ser un buen líder implica más que simplemente dar órdenes; se trata de inspirar y guiar a otros hacia un objetivo común. Un líder efectivo es aquel que puede comunicar su visión de manera clara y convincente, motivar a su equipo a alcanzar metas y, al mismo tiempo, mantener un ambiente de trabajo positivo y productivo.
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Índice -->
+            <div class="col-md-3 d-none d-md-block">
+                <div id="indice" class="sticky-top" style="padding-top: 16.66vh;">
+                    <h4>Índice</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#articulo1">La Importancia de una Buena Selección de Personal</a></li>
+                        <li class="list-group-item"><a href="#articulo2">Estrategias Efectivas de Reclutamiento</a></li>
+                        <li class="list-group-item"><a href="#articulo3">Evaluación Psicolaboral en el Proceso de Contratación</a></li>
+                        <li class="list-group-item"><a href="#articulo4">Beneficios de la Asesoría Laboral para Empresas</a></li>
+                        <li class="list-group-item"><a href="#articulo5">Cómo Construir un Equipo de Alto Rendimiento</a></li>
+                    </ul>
+                </div>
+            </div>
 
-                Uno de los aspectos clave del liderazgo es la comunicación. Un buen líder debe ser capaz de escuchar a su equipo y comprender sus preocupaciones y necesidades. Esto no solo fomenta un entorno de trabajo colaborativo, sino que también ayuda al líder a tomar decisiones más informadas. La comunicación efectiva no se trata solo de hablar; se trata de escuchar activamente y asegurarse de que todos en el equipo se sientan valorados y comprendidos.
-                
-                Otra característica importante de un buen líder es la capacidad de tomar decisiones. En cualquier entorno, se espera que un líder tome decisiones difíciles en momentos de incertidumbre. Esto requiere no solo conocimiento y experiencia, sino también la capacidad de analizar situaciones complejas y considerar las implicaciones a largo plazo de cada decisión. Un líder debe ser decisivo, pero también debe estar dispuesto a admitir cuando ha cometido un error y tomar las medidas necesarias para corregirlo.
-                
-                La empatía es otra cualidad esencial en el liderazgo. Un líder empático entiende y se preocupa por las emociones y perspectivas de su equipo. Esto no solo fortalece la relación entre el líder y su equipo, sino que también puede mejorar la moral y la motivación en el lugar de trabajo. Los empleados que sienten que su líder se preocupa por ellos están más comprometidos y son más propensos a esforzarse por alcanzar los objetivos de la organización.
-                
-                Además, un líder efectivo debe ser capaz de delegar tareas de manera adecuada. Delegar no solo ayuda a distribuir la carga de trabajo, sino que también permite que los miembros del equipo desarrollen sus propias habilidades y asuman más responsabilidades. Sin embargo, delegar no significa simplemente asignar tareas; un buen líder también proporciona el apoyo y los recursos necesarios para que su equipo tenga éxito en esas tareas.
-                
-                La capacidad de inspirar a otros es quizás la cualidad más poderosa de un líder. Un líder inspirador es alguien que no solo establece metas ambiciosas, sino que también motiva a su equipo a alcanzarlas. Esto se logra a través de un ejemplo personal, demostrando integridad, pasión y compromiso. Cuando los miembros del equipo ven que su líder está genuinamente comprometido con la visión y los objetivos de la organización, están más dispuestos a seguir su ejemplo.
-                
-                Finalmente, la resiliencia es una cualidad fundamental para cualquier líder. La capacidad de enfrentar desafíos, superar obstáculos y mantenerse enfocado en los objetivos a pesar de las dificultades es lo que distingue a un buen líder. La resiliencia no solo beneficia al líder, sino que también inspira a todo el equipo a seguir adelante en momentos de adversidad.
-                
-                En resumen, el liderazgo efectivo es una combinación de comunicación, toma de decisiones, empatía, delegación, inspiración y resiliencia. Desarrollar estas habilidades no solo mejorará la capacidad de un líder para guiar a su equipo, sino que también contribuirá al éxito general de la organización. Cada líder debe esforzarse por perfeccionar estas cualidades, no solo por su propio crecimiento, sino por el bienestar y el éxito de su equipo y organización.</p>
-        </article>
+            <!-- Sección Blog -->
+            <div class="col-md-9">
+                <section class="blog-section">
+                    <h1>Blog</h1>
 
-        <article class="blog-article">
-            <h2>Título del Artículo 2</h2>
-            <img src="imagen/reunion.jpg" alt="Imagen Artículo 2" class="blog-image">
-            <p>El desarrollo de habilidades de liderazgo es esencial en cualquier ámbito de la vida. Desde el ámbito laboral hasta el personal, ser un buen líder implica más que simplemente dar órdenes; se trata de inspirar y guiar a otros hacia un objetivo común. Un líder efectivo es aquel que puede comunicar su visión de manera clara y convincente, motivar a su equipo a alcanzar metas y, al mismo tiempo, mantener un ambiente de trabajo positivo y productivo.
+                    <article id="articulo1" class="blog-article">
+                        <h2>La Importancia de una Buena Selección de Personal</h2>
+                        <img src="imagen/equipo_ganador.jpg" alt="Imagen Artículo 1" class="blog-image">
+                        <p>La selección de personal es uno de los procesos más críticos en cualquier empresa. Elegir al
+                            candidato correcto puede significar la diferencia entre el éxito y el fracaso en un proyecto.
+                            Es vital que las empresas inviertan tiempo y recursos en esta tarea para asegurarse de que
+                            están contratando a personas que no solo poseen las habilidades técnicas necesarias, sino que
+                            también se alinean con la cultura y los valores de la organización.</p>
+                        <p>Un proceso de selección efectivo comienza con una descripción clara del puesto de trabajo. Esto
+                            incluye no solo las responsabilidades del cargo, sino también las habilidades y competencias
+                            que se requieren para tener éxito en ese rol. Es importante que los responsables de la
+                            selección trabajen de cerca con los líderes de la empresa para asegurarse de que entienden
+                            completamente las necesidades del puesto.</p>
+                        <p>La entrevista es una parte crucial del proceso. Más allá de las preguntas técnicas, es
+                            fundamental evaluar cómo se comporta el candidato bajo presión y si tiene la capacidad de
+                            trabajar en equipo. Las entrevistas deben estar diseñadas para identificar no solo las
+                            habilidades duras, sino también las habilidades blandas, que son igualmente importantes.</p>
+                        <p>Finalmente, un buen proceso de selección debe incluir referencias y verificaciones de
+                            antecedentes. Esto asegura que la empresa esté tomando decisiones informadas basadas en la
+                            experiencia previa del candidato. La inversión en una selección adecuada de personal es
+                            esencial para el crecimiento sostenible de cualquier empresa.</p>
+                        <a href="#indice">INICIO</a>
+                    </article>
 
-                Uno de los aspectos clave del liderazgo es la comunicación. Un buen líder debe ser capaz de escuchar a su equipo y comprender sus preocupaciones y necesidades. Esto no solo fomenta un entorno de trabajo colaborativo, sino que también ayuda al líder a tomar decisiones más informadas. La comunicación efectiva no se trata solo de hablar; se trata de escuchar activamente y asegurarse de que todos en el equipo se sientan valorados y comprendidos.
-                
-                Otra característica importante de un buen líder es la capacidad de tomar decisiones. En cualquier entorno, se espera que un líder tome decisiones difíciles en momentos de incertidumbre. Esto requiere no solo conocimiento y experiencia, sino también la capacidad de analizar situaciones complejas y considerar las implicaciones a largo plazo de cada decisión. Un líder debe ser decisivo, pero también debe estar dispuesto a admitir cuando ha cometido un error y tomar las medidas necesarias para corregirlo.
-                
-                La empatía es otra cualidad esencial en el liderazgo. Un líder empático entiende y se preocupa por las emociones y perspectivas de su equipo. Esto no solo fortalece la relación entre el líder y su equipo, sino que también puede mejorar la moral y la motivación en el lugar de trabajo. Los empleados que sienten que su líder se preocupa por ellos están más comprometidos y son más propensos a esforzarse por alcanzar los objetivos de la organización.
-                
-                Además, un líder efectivo debe ser capaz de delegar tareas de manera adecuada. Delegar no solo ayuda a distribuir la carga de trabajo, sino que también permite que los miembros del equipo desarrollen sus propias habilidades y asuman más responsabilidades. Sin embargo, delegar no significa simplemente asignar tareas; un buen líder también proporciona el apoyo y los recursos necesarios para que su equipo tenga éxito en esas tareas.
-                
-                La capacidad de inspirar a otros es quizás la cualidad más poderosa de un líder. Un líder inspirador es alguien que no solo establece metas ambiciosas, sino que también motiva a su equipo a alcanzarlas. Esto se logra a través de un ejemplo personal, demostrando integridad, pasión y compromiso. Cuando los miembros del equipo ven que su líder está genuinamente comprometido con la visión y los objetivos de la organización, están más dispuestos a seguir su ejemplo.
-                
-                Finalmente, la resiliencia es una cualidad fundamental para cualquier líder. La capacidad de enfrentar desafíos, superar obstáculos y mantenerse enfocado en los objetivos a pesar de las dificultades es lo que distingue a un buen líder. La resiliencia no solo beneficia al líder, sino que también inspira a todo el equipo a seguir adelante en momentos de adversidad.
-                
-                En resumen, el liderazgo efectivo es una combinación de comunicación, toma de decisiones, empatía, delegación, inspiración y resiliencia. Desarrollar estas habilidades no solo mejorará la capacidad de un líder para guiar a su equipo, sino que también contribuirá al éxito general de la organización. Cada líder debe esforzarse por perfeccionar estas cualidades, no solo por su propio crecimiento, sino por el bienestar y el éxito de su equipo y organización.</p>
-        </article>
+                    <article id="articulo2" class="blog-article">
+                        <h2>Estrategias Efectivas de Reclutamiento</h2>
+                        <img src="imagen/estrategia_reclutamiento.jpg" alt="Imagen Artículo 2" class="blog-image">
+                        <p>El reclutamiento es la puerta de entrada para el talento en cualquier organización. Sin embargo,
+                            no se trata solo de atraer candidatos, sino de encontrar a los mejores y asegurarse de que se
+                            alineen con los objetivos de la empresa. Una estrategia efectiva de reclutamiento comienza con
+                            la construcción de una marca empleadora sólida. Esto incluye no solo ofrecer salarios
+                            competitivos, sino también promover un ambiente de trabajo positivo y oportunidades de
+                            desarrollo profesional.</p>
+                        <p>Las redes sociales se han convertido en una herramienta esencial para el reclutamiento.
+                            Plataformas como LinkedIn permiten a las empresas llegar a candidatos que de otra manera
+                            podrían no estar buscando activamente un cambio de empleo. Además, el uso de análisis de datos
+                            en el reclutamiento permite a las empresas identificar tendencias y ajustar sus estrategias en
+                            consecuencia.</p>
+                        <p>Otro aspecto crucial es la creación de un proceso de selección que sea eficiente y justo. Los
+                            candidatos valoran la transparencia y la comunicación durante todo el proceso de contratación.
+                            Esto significa mantenerlos informados sobre el estado de su aplicación y ofrecer
+                            retroalimentación constructiva.</p>
+                        <p>Finalmente, la retención es tan importante como el reclutamiento. Asegurarse de que los nuevos
+                            empleados se integren bien en la cultura de la empresa y tengan un plan de desarrollo claro es
+                            clave para mantener el talento a largo plazo.</p>
+                        <a href="#indice">INICIO</a>
+                    </article>
 
-        <article class="blog-article">
-            <h2>Título del Artículo 3</h2>
-            <img src="imagen/reunion.jpg" alt="Imagen Artículo 3" class="blog-image">
-            <p>El desarrollo de habilidades de liderazgo es esencial en cualquier ámbito de la vida. Desde el ámbito laboral hasta el personal, ser un buen líder implica más que simplemente dar órdenes; se trata de inspirar y guiar a otros hacia un objetivo común. Un líder efectivo es aquel que puede comunicar su visión de manera clara y convincente, motivar a su equipo a alcanzar metas y, al mismo tiempo, mantener un ambiente de trabajo positivo y productivo.
+                    <article id="articulo3" class="blog-article">
+                        <h2>Evaluación Psicolaboral en el Proceso de Contratación</h2>
+                        <img src="imagen/examen.jpg" alt="Imagen Artículo 3" class="blog-image">
+                        <p>La evaluación psicolaboral es una herramienta fundamental en el proceso de contratación, ya que
+                            permite medir no solo las competencias técnicas de un candidato, sino también su capacidad para
+                            adaptarse al entorno de trabajo y su compatibilidad con la cultura organizacional. Este tipo
+                            de evaluación puede prevenir problemas futuros y asegurar que el candidato seleccionado tenga
+                            un desempeño óptimo.</p>
+                        <p>Las evaluaciones psicolaborales incluyen pruebas que miden la inteligencia emocional, la
+                            capacidad de resolución de conflictos y la adaptabilidad. Estas son habilidades esenciales
+                            para cualquier empleado, especialmente en roles que requieren interacción constante con otros
+                            miembros del equipo o con clientes. Además, las pruebas de personalidad pueden ayudar a
+                            determinar si el estilo de trabajo del candidato es adecuado para la posición que va a ocupar.
+                        </p>
+                        <p>Es crucial que las evaluaciones psicolaborales se realicen de manera objetiva y ética. Los
+                            resultados deben ser utilizados como una guía para tomar decisiones informadas, no como un
+                            criterio exclusivo de selección. La integración de estos resultados con las entrevistas y
+                            otras evaluaciones puede ofrecer una visión más completa del candidato.</p>
+                        <p>En resumen, la evaluación psicolaboral es una inversión en la calidad del talento que se
+                            incorpora a la empresa. Asegurar que los nuevos empleados no solo sean competentes, sino
+                            también emocionalmente aptos, es clave para un ambiente de trabajo saludable y productivo.</p>
+                        <a href="#indice">INICIO</a>
+                    </article>
 
-                Uno de los aspectos clave del liderazgo es la comunicación. Un buen líder debe ser capaz de escuchar a su equipo y comprender sus preocupaciones y necesidades. Esto no solo fomenta un entorno de trabajo colaborativo, sino que también ayuda al líder a tomar decisiones más informadas. La comunicación efectiva no se trata solo de hablar; se trata de escuchar activamente y asegurarse de que todos en el equipo se sientan valorados y comprendidos.
-                
-                Otra característica importante de un buen líder es la capacidad de tomar decisiones. En cualquier entorno, se espera que un líder tome decisiones difíciles en momentos de incertidumbre. Esto requiere no solo conocimiento y experiencia, sino también la capacidad de analizar situaciones complejas y considerar las implicaciones a largo plazo de cada decisión. Un líder debe ser decisivo, pero también debe estar dispuesto a admitir cuando ha cometido un error y tomar las medidas necesarias para corregirlo.
-                
-                La empatía es otra cualidad esencial en el liderazgo. Un líder empático entiende y se preocupa por las emociones y perspectivas de su equipo. Esto no solo fortalece la relación entre el líder y su equipo, sino que también puede mejorar la moral y la motivación en el lugar de trabajo. Los empleados que sienten que su líder se preocupa por ellos están más comprometidos y son más propensos a esforzarse por alcanzar los objetivos de la organización.
-                
-                Además, un líder efectivo debe ser capaz de delegar tareas de manera adecuada. Delegar no solo ayuda a distribuir la carga de trabajo, sino que también permite que los miembros del equipo desarrollen sus propias habilidades y asuman más responsabilidades. Sin embargo, delegar no significa simplemente asignar tareas; un buen líder también proporciona el apoyo y los recursos necesarios para que su equipo tenga éxito en esas tareas.
-                
-                La capacidad de inspirar a otros es quizás la cualidad más poderosa de un líder. Un líder inspirador es alguien que no solo establece metas ambiciosas, sino que también motiva a su equipo a alcanzarlas. Esto se logra a través de un ejemplo personal, demostrando integridad, pasión y compromiso. Cuando los miembros del equipo ven que su líder está genuinamente comprometido con la visión y los objetivos de la organización, están más dispuestos a seguir su ejemplo.
-                
-                Finalmente, la resiliencia es una cualidad fundamental para cualquier líder. La capacidad de enfrentar desafíos, superar obstáculos y mantenerse enfocado en los objetivos a pesar de las dificultades es lo que distingue a un buen líder. La resiliencia no solo beneficia al líder, sino que también inspira a todo el equipo a seguir adelante en momentos de adversidad.
-                
-                En resumen, el liderazgo efectivo es una combinación de comunicación, toma de decisiones, empatía, delegación, inspiración y resiliencia. Desarrollar estas habilidades no solo mejorará la capacidad de un líder para guiar a su equipo, sino que también contribuirá al éxito general de la organización. Cada líder debe esforzarse por perfeccionar estas cualidades, no solo por su propio crecimiento, sino por el bienestar y el éxito de su equipo y organización.</p>
-        </article>
+                    <article id="articulo4" class="blog-article">
+                        <h2>Beneficios de la Asesoría Laboral para Empresas</h2>
+                        <img src="imagen/reunion.jpg" alt="Imagen Artículo 4" class="blog-image">
+                        <p>Las empresas a menudo se enfrentan a desafíos complejos en materia de recursos humanos. Desde la
+                            gestión del talento hasta la resolución de conflictos, la asesoría laboral puede ser una
+                            herramienta invaluable para asegurar que se tomen las mejores decisiones posibles. Un buen
+                            asesor laboral puede ayudar a identificar problemas antes de que se conviertan en crisis y
+                            ofrecer soluciones que alineen los intereses de los empleados con los objetivos de la empresa.
+                        </p>
+                        <p>Uno de los principales beneficios de la asesoría laboral es la reducción de riesgos. Los
+                            asesores laborales están actualizados con las leyes y regulaciones laborales, lo que permite a
+                            las empresas evitar sanciones y litigios costosos. Además, pueden ofrecer orientación sobre
+                            cómo implementar políticas que promuevan un ambiente de trabajo justo y equitativo.</p>
+                        <p>La asesoría laboral también puede mejorar la moral y la productividad. Al proporcionar a los
+                            empleados canales de comunicación efectivos y asegurarse de que se sientan escuchados y
+                            valorados, las empresas pueden reducir la rotación de personal y aumentar el compromiso.
+                            Además, los asesores pueden ayudar a diseñar programas de desarrollo profesional que
+                            fortalezcan las habilidades del equipo y preparen a los empleados para roles de mayor
+                            responsabilidad.</p>
+                        <p>En conclusión, la asesoría laboral no es solo una medida preventiva, sino una inversión en el
+                            futuro de la empresa. Al garantizar que se sigan las mejores prácticas y se promueva un
+                            ambiente de trabajo saludable, las empresas pueden construir una base sólida para el éxito a
+                            largo plazo.</p>
+                        <a href="#indice">INICIO</a>
+                    </article>
 
-        <article class="blog-article">
-            <h2>Título del Artículo 4</h2>
-            <img src="imagen/reunion.jpg" alt="Imagen Artículo 4" class="blog-image">
-            <p>El desarrollo de habilidades de liderazgo es esencial en cualquier ámbito de la vida. Desde el ámbito laboral hasta el personal, ser un buen líder implica más que simplemente dar órdenes; se trata de inspirar y guiar a otros hacia un objetivo común. Un líder efectivo es aquel que puede comunicar su visión de manera clara y convincente, motivar a su equipo a alcanzar metas y, al mismo tiempo, mantener un ambiente de trabajo positivo y productivo.
-
-                Uno de los aspectos clave del liderazgo es la comunicación. Un buen líder debe ser capaz de escuchar a su equipo y comprender sus preocupaciones y necesidades. Esto no solo fomenta un entorno de trabajo colaborativo, sino que también ayuda al líder a tomar decisiones más informadas. La comunicación efectiva no se trata solo de hablar; se trata de escuchar activamente y asegurarse de que todos en el equipo se sientan valorados y comprendidos.
-                
-                Otra característica importante de un buen líder es la capacidad de tomar decisiones. En cualquier entorno, se espera que un líder tome decisiones difíciles en momentos de incertidumbre. Esto requiere no solo conocimiento y experiencia, sino también la capacidad de analizar situaciones complejas y considerar las implicaciones a largo plazo de cada decisión. Un líder debe ser decisivo, pero también debe estar dispuesto a admitir cuando ha cometido un error y tomar las medidas necesarias para corregirlo.
-                
-                La empatía es otra cualidad esencial en el liderazgo. Un líder empático entiende y se preocupa por las emociones y perspectivas de su equipo. Esto no solo fortalece la relación entre el líder y su equipo, sino que también puede mejorar la moral y la motivación en el lugar de trabajo. Los empleados que sienten que su líder se preocupa por ellos están más comprometidos y son más propensos a esforzarse por alcanzar los objetivos de la organización.
-                
-                Además, un líder efectivo debe ser capaz de delegar tareas de manera adecuada. Delegar no solo ayuda a distribuir la carga de trabajo, sino que también permite que los miembros del equipo desarrollen sus propias habilidades y asuman más responsabilidades. Sin embargo, delegar no significa simplemente asignar tareas; un buen líder también proporciona el apoyo y los recursos necesarios para que su equipo tenga éxito en esas tareas.
-                
-                La capacidad de inspirar a otros es quizás la cualidad más poderosa de un líder. Un líder inspirador es alguien que no solo establece metas ambiciosas, sino que también motiva a su equipo a alcanzarlas. Esto se logra a través de un ejemplo personal, demostrando integridad, pasión y compromiso. Cuando los miembros del equipo ven que su líder está genuinamente comprometido con la visión y los objetivos de la organización, están más dispuestos a seguir su ejemplo.
-                
-                Finalmente, la resiliencia es una cualidad fundamental para cualquier líder. La capacidad de enfrentar desafíos, superar obstáculos y mantenerse enfocado en los objetivos a pesar de las dificultades es lo que distingue a un buen líder. La resiliencia no solo beneficia al líder, sino que también inspira a todo el equipo a seguir adelante en momentos de adversidad.
-                
-                En resumen, el liderazgo efectivo es una combinación de comunicación, toma de decisiones, empatía, delegación, inspiración y resiliencia. Desarrollar estas habilidades no solo mejorará la capacidad de un líder para guiar a su equipo, sino que también contribuirá al éxito general de la organización. Cada líder debe esforzarse por perfeccionar estas cualidades, no solo por su propio crecimiento, sino por el bienestar y el éxito de su equipo y organización.</p>
-        </article>
-
-        <article class="blog-article">
-            <h2>Título del Artículo 5</h2>
-            <img src="imagen/reunion.jpg" alt="Imagen Artículo 5" class="blog-image">
-            <p>El desarrollo de habilidades de liderazgo es esencial en cualquier ámbito de la vida. Desde el ámbito laboral hasta el personal, ser un buen líder implica más que simplemente dar órdenes; se trata de inspirar y guiar a otros hacia un objetivo común. Un líder efectivo es aquel que puede comunicar su visión de manera clara y convincente, motivar a su equipo a alcanzar metas y, al mismo tiempo, mantener un ambiente de trabajo positivo y productivo.
-
-                Uno de los aspectos clave del liderazgo es la comunicación. Un buen líder debe ser capaz de escuchar a su equipo y comprender sus preocupaciones y necesidades. Esto no solo fomenta un entorno de trabajo colaborativo, sino que también ayuda al líder a tomar decisiones más informadas. La comunicación efectiva no se trata solo de hablar; se trata de escuchar activamente y asegurarse de que todos en el equipo se sientan valorados y comprendidos.
-                
-                Otra característica importante de un buen líder es la capacidad de tomar decisiones. En cualquier entorno, se espera que un líder tome decisiones difíciles en momentos de incertidumbre. Esto requiere no solo conocimiento y experiencia, sino también la capacidad de analizar situaciones complejas y considerar las implicaciones a largo plazo de cada decisión. Un líder debe ser decisivo, pero también debe estar dispuesto a admitir cuando ha cometido un error y tomar las medidas necesarias para corregirlo.
-                
-                La empatía es otra cualidad esencial en el liderazgo. Un líder empático entiende y se preocupa por las emociones y perspectivas de su equipo. Esto no solo fortalece la relación entre el líder y su equipo, sino que también puede mejorar la moral y la motivación en el lugar de trabajo. Los empleados que sienten que su líder se preocupa por ellos están más comprometidos y son más propensos a esforzarse por alcanzar los objetivos de la organización.
-                
-                Además, un líder efectivo debe ser capaz de delegar tareas de manera adecuada. Delegar no solo ayuda a distribuir la carga de trabajo, sino que también permite que los miembros del equipo desarrollen sus propias habilidades y asuman más responsabilidades. Sin embargo, delegar no significa simplemente asignar tareas; un buen líder también proporciona el apoyo y los recursos necesarios para que su equipo tenga éxito en esas tareas.
-                
-                La capacidad de inspirar a otros es quizás la cualidad más poderosa de un líder. Un líder inspirador es alguien que no solo establece metas ambiciosas, sino que también motiva a su equipo a alcanzarlas. Esto se logra a través de un ejemplo personal, demostrando integridad, pasión y compromiso. Cuando los miembros del equipo ven que su líder está genuinamente comprometido con la visión y los objetivos de la organización, están más dispuestos a seguir su ejemplo.
-                
-                Finalmente, la resiliencia es una cualidad fundamental para cualquier líder. La capacidad de enfrentar desafíos, superar obstáculos y mantenerse enfocado en los objetivos a pesar de las dificultades es lo que distingue a un buen líder. La resiliencia no solo beneficia al líder, sino que también inspira a todo el equipo a seguir adelante en momentos de adversidad.
-                
-                En resumen, el liderazgo efectivo es una combinación de comunicación, toma de decisiones, empatía, delegación, inspiración y resiliencia. Desarrollar estas habilidades no solo mejorará la capacidad de un líder para guiar a su equipo, sino que también contribuirá al éxito general de la organización. Cada líder debe esforzarse por perfeccionar estas cualidades, no solo por su propio crecimiento, sino por el bienestar y el éxito de su equipo y organización.</p>
-        </article>
-    </section>
+                    <article id="articulo5" class="blog-article">
+                        <h2>Cómo Construir un Equipo de Alto Rendimiento</h2>
+                        <img src="imagen/reunion.jpg" alt="Imagen Artículo 5" class="blog-image">
+                        <p>El primer paso para construir un equipo de alto rendimiento es contratar a las personas
+                            adecuadas. Esto significa no solo buscar habilidades técnicas, sino también evaluar la
+                            capacidad de los candidatos para trabajar en equipo y su alineación con los valores de la
+                            empresa. La diversidad en habilidades y perspectivas también es clave para fomentar la
+                            innovación.</p>
+                        <p>Una vez formado el equipo, es fundamental invertir en su desarrollo. Esto incluye ofrecer
+                            oportunidades de capacitación continua, así como crear un entorno en el que los empleados se
+                            sientan valorados y motivados para contribuir con su mejor esfuerzo. El liderazgo también
+                            juega un papel crucial; un líder que inspire y guíe al equipo hacia metas compartidas puede
+                            marcar una gran diferencia en el desempeño general.</p>
+                        <p>Finalmente, la cultura organizacional debe apoyar el trabajo en equipo y la innovación. Esto
+                            significa fomentar una comunicación abierta, reconocer los logros y aprender de los errores.
+                            Un equipo de alto rendimiento no solo es eficaz, sino también adaptable y resiliente, capaz de
+                            superar desafíos y alcanzar objetivos ambiciosos.</p>
+                        <a href="#indice">INICIO</a>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer-section">
@@ -159,4 +229,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
