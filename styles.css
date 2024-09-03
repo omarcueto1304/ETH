@@ -237,6 +237,69 @@ body {
     transform: scale(1.1); /* Incrementa el tamaño en un factor de 1.1 al hacer hover */
 }
 
+/* Estilos para el footer */
+footer {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px 0; /* Espacio interno */
+}
+
+.footer-container {
+    display: flex; /* Para organizar el contenido en línea */
+    align-items: center; /* Centrado vertical */
+    justify-content: space-between; /* Espacio entre los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 20px auto;
+    padding: 0 20px; /* Espacio interior en los lados */
+}
+
+.footer-logo img {
+    max-height: 60px; /* Tamaño máximo del logo */
+}
+
+
+.footer-contact-title h2 {
+    margin: 0;
+    text-align: center;
+    flex: 1; /* Ocupa el espacio central */
+}
+
+.footer-contact {
+    text-align: center; /* Centrar el texto */
+    font-size: 1.5em; /* Incrementa el tamaño de la fuente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin: 20px 0; /* Margen superior e inferior de 20px */
+    color: #000; /* Color del texto */
+}
+
+
+.footer-contact-info img {
+    max-width: 30px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin-right: 10px; /* Añade un pequeño margen a la derecha si está junto a texto */
+}
+
+
+.footer-contact-info p {
+    margin: 5px 0; /* Margen entre líneas */
+}
+
+.footer-contact-info a {
+    color: #000; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-contact-info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.footer-logo img {
+    max-height: 1000px; /* Ajusta la altura máxima del logo */
+    max-width: 200px; /* Ajusta el ancho máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
